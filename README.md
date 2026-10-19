@@ -6,6 +6,9 @@ A neural portfolio allocator trained **end-to-end through a convex optimisation 
 
 **Stack:** PyTorch · cvxpy / cvxpylayers · Optuna · scikit-learn · statsmodels · yfinance · pandas
 
+![Equity curves and drawdowns on the test period](assets/equity_curve_drawdown.png)
+*Growth of $10,000 and drawdowns over the 448-day test period, for the three DFL variants and the MVO and equal-weight baselines (survivorship-biased universe; see Limitations).*
+
 ---
 
 ## The idea
@@ -49,6 +52,9 @@ The risk term uses a Cholesky parametrisation (‖Lᵀw‖² = wᵀΣw) so the p
 - **EW:** equal-weight.
 
 ## Results (test set, 448 days)
+
+![Sharpe ratio per test sub-window](assets/sharpe_by_window.png)
+*Walk-forward DFL leads in the first two windows; in the third, equal-weight has the higher Sharpe.*
 
 | Strategy | Ann. return | Ann. vol | Sharpe | Max drawdown |
 |---|---|---|---|---|
