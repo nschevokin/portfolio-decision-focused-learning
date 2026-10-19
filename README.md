@@ -2,8 +2,6 @@
 
 A neural portfolio allocator trained **end-to-end through a convex optimisation layer** (decision-focused learning, DFL) and compared against classical Mean-Variance Optimisation (MVO) on a fully held-out, walk-forward test period.
 
-> Course project (AI in Industry). Research/educational work, **not investment advice**.
-
 **Stack:** PyTorch · cvxpy / cvxpylayers · Optuna · scikit-learn · statsmodels · yfinance · pandas
 
 ---
